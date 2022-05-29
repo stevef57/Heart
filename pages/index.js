@@ -11,12 +11,6 @@ export default function Home() {
           name="description"
           content="ColdHeartMedia, shooting videos in California. Videographer, Fresno, LA, San Francisco music videos special events"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
-          rel="stylesheet"
-        ></link>
       </Head>
       <div className={styles.whitebox}>
         <div className={styles.heroBox}>
