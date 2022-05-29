@@ -1,0 +1,86 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.white {
+    background-color: rgb(215, 213, 213);
+    width: 86%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contactSection {
+    width: 100%;
+    height: 42rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formContainer {
+    width: 100%;
+    height: inherit;
+    background-image: url(../public/pictures/draeko1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+
+.shadow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.398);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.contactFormBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: white;
+}
+
+// media query 
+
+@media (max-width: 1060px) {
+    .white {
+        width: 100%;
+        background-color: #181818;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+@media (max-width: 428px){
+    .white {
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+}
+
+
+

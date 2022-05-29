@@ -1,0 +1,181 @@
+.navbox {
+    background-color: #090909;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 400;
+}
+
+.logoBox{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.navTitleBox{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 3.5rem;
+}
+
+.navTitle {
+    color: #AEAEAE;
+    font-family: 'Bebas Neue';
+    margin: 0 3rem 0 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 2.2rem;
+}
+
+.insta {
+    color: #AEAEAE;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.youtube {
+    color: #AEAEAE;
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+
+// mobile view
+
+.mobileAll {
+    display: none;
+    position: sticky;
+    top: 0;
+    z-index: 400;
+}
+
+.mobileBox {
+    background-color: #202020;
+    width: 100%;
+    height: 3.75rem;
+}
+
+.burger {
+    color: #AEAEAE;
+    margin-left: 1rem;
+    font-size: 2.3rem;
+    cursor: pointer;
+}
+
+.bottomMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #003b66;
+    font-family: 'Bebas Neue';
+    color: #AEAEAE;
+    font-size: .6rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .bottomIcons {
+        font-size: 1.7rem;
+        color: #AEAEAE
+    }
+}
+
+
+@media (max-width: 1060px) {
+    .mobileAll {
+        display: block;
+        position: sticky;
+        top: 0;
+        z-index: 400;
+    }
+    .mobileBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: [first] 20% auto [last] 20%;
+        .logoBox {
+            margin-left: 3rem;
+        }
+        .social {
+            margin-right: .7rem;
+            .youtube {
+                margin-left: 1rem;
+            }
+        }
+    }
+    .social {
+        padding: 0rem;
+        white-space: nowrap;
+        text-align: right;
+        .youtube {
+            font-size: 2rem;
+        }
+        .insta {
+            font-size: 1.5rem;
+        }
+    }
+    .navTitleBox {
+        flex-direction: column;
+        align-items:flex-start;
+        position: absolute;
+        top: 3.75rem;
+        left: 0;
+        width: 100%;
+        background-color: #202020;
+        padding: 1rem 0 0 1rem;
+        .navTitle {
+            margin: 0 1rem 1rem 0;
+        }
+    }
+}
+
+@media (max-width: 428px) {
+    .logoBox {
+        margin-left: 0;
+    }
+    .social {
+        margin-left: 1.5rem;
+    }
+    .burger {
+        margin-left: .5rem;
+    }
+    .bottomMenu {
+        font-size: .4rem;
+        .bottomIcons {
+            font-size: 1.5rem;
+        }
+    }
+}
+@media (max-width: 410px) {
+    .burger {
+        font-size: 1.7rem;
+    }
+    .social {
+        margin-left: 1.3rem;
+        .insta {
+            font-size: 1.3rem;
+        }
+        .youtube {
+            font-size: 1.7rem;
+        }
+    }
+}
