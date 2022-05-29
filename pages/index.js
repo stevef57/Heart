@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Latest from "../components/Latest";
-import styles from "../styles/home.module.scss";
+import styles from "../styles/Home.module.scss";
 import Link from "next/link";
 export default function Home() {
   return (
