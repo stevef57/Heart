@@ -2,7 +2,6 @@ import Head from "next/head";
 import Latest from "../components/Latest";
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
-import Image from "next/image";
 export default function Home() {
   return (
     <div className={styles.whiteboxBox}>
@@ -16,6 +15,7 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
           rel="stylesheet"
         />
+        <meta name="theme-color" content="#181818" />
       </Head>
       <div className={styles.whitebox}>
         <div className={styles.heroBox}>
