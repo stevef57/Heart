@@ -23,6 +23,7 @@ export default function Videos({ results }) {
           href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
           rel="stylesheet"
         />
+        <meta name="theme-color" content="#181818" />
       </Head>
       <div className={styles.white}>
         <div className={styles.playerSize}>
