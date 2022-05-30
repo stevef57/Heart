@@ -42,7 +42,7 @@ const data = {
       img: "../thumbnail/hardtimes.jpg",
       title: "Lostboi X Issue -- Hard Times",
       date: "MAY/16/2022",
-      url: "https://www.youtube.com/watch?v=-goZhqTP1hg",
+      url: "https://www.youtube.com/watch?v=CYt7XulNlx0",
     },
     {
       id: uuidv4(),
