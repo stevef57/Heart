@@ -45,7 +45,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={styles.heroThree}>
+          <div
+            className={styles.heroThree}
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(
+                "https://www.youtube.com/watch?v=pmhQ0idHdPE",
+                "_blank"
+              );
+            }}
+          >
             <div className={styles.shadow}>
               <h1 className={styles.news}>
                 Bankroll RaeDoe hits a million views
