@@ -19,6 +19,10 @@ export default function Videos({ results }) {
           name="description"
           content="Check out the latest videos from ColdHeartMedia"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <div className={styles.white}>
         <div className={styles.playerSize}>

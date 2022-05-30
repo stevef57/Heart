@@ -11,6 +11,10 @@ const Contact = () => {
           name="description"
           content="Contact us for questions and quotes"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <div className={styles.white}>
         <div className={styles.contactSection}>
