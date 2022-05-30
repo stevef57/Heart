@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.whiteboxBox}>
       <Head>
-        <title>ColdHeartMedia</title>
+        <title>ColdHeartMedi</title>
         <meta
           name="description"
           content="ColdHeartMedia, shooting videos in California. Videographer, Fresno, LA, San Francisco music videos special events"
