@@ -4,6 +4,48 @@ const data = {
   cardData: [
     {
       id: uuidv4(),
+      img: "../thumbnail/forever.jpg",
+      title: "D Summers x Zarina -- Forever",
+      date: "MAY/27/2022",
+      url: "https://www.youtube.com/watch?v=ques6osdVCs",
+    },
+    {
+      id: uuidv4(),
+      img: "../thumbnail/beutiful.png",
+      title: "Momo HPG -- No Beautiful Lies",
+      date: "MAY/20/2022",
+      url: "https://www.youtube.com/watch?v=3j-2VLOJXp0",
+    },
+    {
+      id: uuidv4(),
+      img: "../thumbnail/actup.png",
+      title: "Fay3hunnit x J. Stalin -- Act Up",
+      date: "MAY/20/2022",
+      url: "https://www.youtube.com/watch?v=wl1tEqgoEkM",
+    },
+    {
+      id: uuidv4(),
+      img: "../thumbnail/distance.jpg",
+      title: "PAPO -- DISTANCE",
+      date: "MAY/19/2022",
+      url: "https://www.youtube.com/watch?v=GkorWklu-7A",
+    },
+    {
+      id: uuidv4(),
+      img: "../thumbnail/nocomp.png",
+      title: "Jayy808 x Chriz Milly -- No Complaining",
+      date: "MAY/17/2022",
+      url: "https://www.youtube.com/watch?v=-goZhqTP1hg",
+    },
+    {
+      id: uuidv4(),
+      img: "../thumbnail/hardtimes.jpg",
+      title: "Lostboi X Issue -- Hard Times",
+      date: "MAY/16/2022",
+      url: "https://www.youtube.com/watch?v=-goZhqTP1hg",
+    },
+    {
+      id: uuidv4(),
       img: "../thumbnail/joe1.jpg",
       title: "JoeDahP x King Rizzy -- Knock It Off",
       date: "APR/28/2022",

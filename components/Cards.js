@@ -7,7 +7,7 @@ const Cards = () => {
 
   const slice = data.cardData.slice(0, noOfElm);
   const loadMore = () => {
-    setNoOfElm(noOfElm + noOfElm);
+    setNoOfElm(noOfElm + 3);
   };
   return (
     <div>
