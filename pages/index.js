@@ -6,10 +6,14 @@ export default function Home() {
   return (
     <div className={styles.whiteboxBox}>
       <Head>
-        <title>ColdHeartMedi</title>
+        <title>ColdHeartMedia</title>
         <meta
           name="description"
           content="ColdHeartMedia, shooting videos in California. Videographer, Fresno, LA, San Francisco music videos special events"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
+          rel="stylesheet"
         />
       </Head>
       <div className={styles.whitebox}>
