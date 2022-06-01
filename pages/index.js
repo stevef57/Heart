@@ -2,6 +2,10 @@ import Head from "next/head";
 import Latest from "../components/Latest";
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
+import Image from "next/image";
+import gif from "../public/pictures/hero.gif";
+import hero2 from "../public/pictures/milly.jpg";
+import hero3 from "../public/pictures/news.png";
 export default function Home() {
   return (
     <div className={styles.whiteboxBox}>
@@ -22,6 +26,13 @@ export default function Home() {
           <div className={styles.heroTop}>
             <Link href="/videos">
               <div className={styles.heroOne}>
+                <Image
+                  className={styles.gif}
+                  src={gif}
+                  layout="fill"
+                  objectFit="cover"
+                  priority={true}
+                />
                 <div className={styles.shadow}>
                   <h1 className={styles.heroTitleOne}>
                     Making Movies in california
@@ -41,6 +52,12 @@ export default function Home() {
               }}
               className={styles.heroTwo}
             >
+              <Image
+                src={hero2}
+                layout="fill"
+                objectFit="cover"
+                priority={true}
+              />
               <div className={styles.shadow}>
                 <h1 className={styles.milly}>Follow Chriz Milly</h1>
               </div>
@@ -56,6 +73,7 @@ export default function Home() {
               );
             }}
           >
+            <Image src={hero3} layout="fill" objectFit="cover" />
             <div className={styles.shadow}>
               <h1 className={styles.news}>
                 Bankroll RaeDoe hits a million views
