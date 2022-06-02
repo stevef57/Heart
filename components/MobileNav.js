@@ -8,7 +8,6 @@ import styles from "../styles/Navbar.module.scss";
 import Social from "./Social";
 import NavLinks from "./NavLinks";
 import { useState } from "react";
-import { motion } from "framer-motion";
 
 const MobileNav = () => {
   const [open, setOpen] = useState(false);
