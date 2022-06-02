@@ -1,12 +1,16 @@
 import styles from "../styles/Navbar.module.scss";
 import Link from "next/link";
+import { useState } from "react";
 
 const NavLinks = (props) => {
+  const [menu, setMenu] = useState(false);
   return (
     <div className={styles.navTitleBox}>
       <Link href="/videos" className={styles.navTitle}>
         <h1
-          onClick={() => props.isMobile && props.forceClosed()}
+          onClick={() => {
+            props.isMobile && props.forceClosed();
+          }}
           className={styles.navTitle}
         >
           videos
