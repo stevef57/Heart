@@ -1,11 +1,14 @@
 import styles from "../styles/Navbar.module.scss";
 import Link from "next/link";
-import { useState } from "react";
 
 const NavLinks = (props) => {
-  const [menu, setMenu] = useState(false);
   return (
-    <div className={styles.navTitleBox}>
+    <div
+      variants={nice}
+      animate={setOpen ? "first" : "second"}
+      className={styles.navTitleBox}
+      transition={{ duration: 1 }}
+    >
       <Link href="/videos" className={styles.navTitle}>
         <h1
           onClick={() => {
