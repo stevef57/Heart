@@ -3,12 +3,7 @@ import Link from "next/link";
 
 const NavLinks = (props) => {
   return (
-    <div
-      variants={nice}
-      animate={setOpen ? "first" : "second"}
-      className={styles.navTitleBox}
-      transition={{ duration: 1 }}
-    >
+    <div className={styles.navTitleBox}>
       <Link href="/videos" className={styles.navTitle}>
         <h1
           onClick={() => {
