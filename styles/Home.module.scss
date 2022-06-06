@@ -95,11 +95,48 @@
 }
 
 .heroThree {
-    background-image: url(../public/pictures/news.png);
     background-size: cover;
     background-position: center;
     margin-bottom: 1rem;
     width: 100%;
+    height: 15rem;
+    border-radius: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.bottomHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroFour {
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+    width: 50%;
+    height: 15rem;
+    margin-right: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.heroFive {
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+    width: 50%;
     height: 15rem;
     border-radius: 20px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
@@ -118,6 +155,21 @@
     font-size: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+.andrew {
+    font-family: 'Bebas Neue', cursive;
+    color: #AEAEAE;
+    font-size: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.sage {
+    font-family: 'Bebas Neue', cursive;
+    color: #AEAEAE;
+    font-size: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding: 2rem;
 }
 
 
@@ -145,6 +197,12 @@
             height: 15rem;
         }
     }
+    .sage {
+        font-size: 2.2rem;
+    }
+    .andrew {
+        font-size: 2.2rem;
+    }
 }
 
 @media (max-width: 428px) {
@@ -162,6 +220,20 @@
             .news {
                 font-size: 2rem;
             }
+        }
+        .bottomHero{
+            order: 3;
+            width: 100%;
+            flex-direction: column;
+        }
+        .heroFour {
+            width: 100%;
+            margin-right: 0;
+            height: 12rem;
+        }
+        .heroFive {
+            width: 100%;
+            height: 12rem;
         }
     }
     .heroOne {

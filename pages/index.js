@@ -4,8 +4,10 @@ import styles from "../styles/Home.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import gif from "../public/pictures/hero.gif";
-import hero2 from "../public/pictures/milly.jpg";
+import hero2 from "../public/pictures/album.jpg";
 import hero3 from "../public/pictures/news.png";
+import hero4 from "../public/pictures/lostboi.png";
+import hero5 from "../public/pictures/lilfvckup.png";
 export default function Home() {
   return (
     <div className={styles.whiteboxBox}>
@@ -59,7 +61,8 @@ export default function Home() {
                 priority={true}
               />
               <div className={styles.shadow}>
-                <h1 className={styles.milly}>Follow Chriz Milly</h1>
+                <h1 className={styles.milly}>The Milly Pack 1.5</h1>
+                <h1 className={styles.milly}>Out now!</h1>
               </div>
             </div>
           </div>
@@ -78,6 +81,37 @@ export default function Home() {
               <h1 className={styles.news}>
                 Bankroll RaeDoe hits a million views
               </h1>
+            </div>
+          </div>
+          <div className={styles.bottomHero}>
+            <div
+              className={styles.heroFour}
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(
+                  "https://www.instagram.com/lostboisworld/",
+                  "_blank"
+                );
+              }}
+            >
+              <Image src={hero4} layout="fill" objectFit="cover" />
+              <div className={styles.shadow}>
+                <h1 className={styles.sage}>
+                  If it ain’t LostBoi they lost boy!
+                </h1>
+              </div>
+            </div>
+            <div
+              className={styles.heroFive}
+              onClick={(e) => {
+                e.preventDefault();
+                window.open("https://www.instagram.com/lilfvckup/", "_blank");
+              }}
+            >
+              <Image src={hero5} layout="fill" objectFit="cover" />
+              <div className={styles.shadow}>
+                <h1 className={styles.andrew}>follow lilfvckup ✈ </h1>
+              </div>
             </div>
           </div>
         </div>
