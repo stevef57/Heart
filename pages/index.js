@@ -3,7 +3,7 @@ import Latest from "../components/Latest";
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import gif from "../public/pictures/hero.gif";
+import gif from "../public/pictures/hero2.gif";
 import hero2 from "../public/pictures/album.jpg";
 import hero3 from "../public/pictures/news.png";
 import hero4 from "../public/pictures/lostboi.png";
