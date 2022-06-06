@@ -110,7 +110,7 @@ export default function Home() {
             >
               <Image src={hero5} layout="fill" objectFit="cover" />
               <div className={styles.shadow}>
-                <h1 className={styles.andrew}>follow lilfvckup ✈ </h1>
+                <h1 className={styles.andrew}>follow lilfvckup</h1>
               </div>
             </div>
           </div>
