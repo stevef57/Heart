@@ -97,7 +97,7 @@ export default function Home() {
               <Image src={hero4} layout="fill" objectFit="cover" />
               <div className={styles.shadow}>
                 <h1 className={styles.sage}>
-                  If it ain’t LostBoi they lost boy!
+                  If it ain’t LostBoi they lost boy
                 </h1>
               </div>
             </div>
