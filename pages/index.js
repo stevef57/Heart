@@ -48,7 +48,7 @@ export default function Home() {
               onClick={(e) => {
                 e.preventDefault();
                 window.open(
-                  "https://distrokid.com/hyperfollow/chrizmilly/about-us-feat-bijan",
+                  "https://distrokid.com/hyperfollow/chrizmilly/the-milly-pack-15",
                   "_blank"
                 );
               }}
