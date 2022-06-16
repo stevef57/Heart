@@ -51,7 +51,10 @@ export default function Videos({ results }) {
                     }}
                   >
                     <Image
-                      src={video.snippet.thumbnails.maxres.url}
+                      src={
+                        video.snippet.thumbnails.maxres?.url ||
+                        video.snippet.thumbnails.high.url
+                      }
                       width={1280}
                       height={720}
                       alt={video.snippet.title}
