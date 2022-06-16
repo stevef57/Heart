@@ -26,24 +26,22 @@ export default function Home() {
       <div className={styles.whitebox}>
         <div className={styles.heroBox}>
           <div className={styles.heroTop}>
-            <Link href="/videos">
-              <div className={styles.heroOne}>
-                <Image
-                  className={styles.gif}
-                  src={gif}
-                  layout="fill"
-                  objectFit="cover"
-                  priority={true}
-                />
-                <div className={styles.shadow}>
-                  <h1 className={styles.heroTitleOne}>
-                    Making Movies in california
-                  </h1>
-                  <h1 className={styles.heroTitleTwo}>1,000,000 +</h1>
-                  <h1 className={styles.heroTitleThree}>Views</h1>
-                </div>
+            <div className={styles.heroOne}>
+              <Image
+                className={styles.gif}
+                src={gif}
+                layout="fill"
+                objectFit="cover"
+                priority={true}
+              />
+              <div className={styles.shadow}>
+                <h1 className={styles.heroTitleOne}>
+                  Making Movies in california
+                </h1>
+                <h1 className={styles.heroTitleTwo}>1,000,000 +</h1>
+                <h1 className={styles.heroTitleThree}>Views</h1>
               </div>
-            </Link>
+            </div>
             <div
               onClick={(e) => {
                 e.preventDefault();
@@ -66,23 +64,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div
-            className={styles.heroThree}
-            onClick={(e) => {
-              e.preventDefault();
-              window.open(
-                "https://www.youtube.com/watch?v=pmhQ0idHdPE",
-                "_blank"
-              );
-            }}
-          >
-            <Image src={hero3} layout="fill" objectFit="cover" />
-            <div className={styles.shadow}>
-              <h1 className={styles.news}>
-                Bankroll RaeDoe hits a million views
-              </h1>
+          <Link href="/videos">
+            <div className={styles.heroThree}>
+              <Image src={hero3} layout="fill" objectFit="cover" />
+              <div className={styles.shadow}>
+                <h1 className={styles.news}>
+                  Bankroll RaeDoe hits a million views
+                </h1>
+              </div>
             </div>
-          </div>
+          </Link>
           <div className={styles.bottomHero}>
             <div
               className={styles.heroFour}
