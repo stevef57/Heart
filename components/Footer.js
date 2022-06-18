@@ -1,4 +1,4 @@
-import Subscribe from "./subscribe";
+import Subscribe from "./Subscribe";
 import styles from "../styles/Footer.module.scss";
 
 const Footer = () => {
