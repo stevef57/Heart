@@ -19,6 +19,7 @@
     "react-indiana-drag-scroll": "^2.2.0",
     "react-player": "^2.10.0",
     "sass": "^1.51.0",
+    "superagent": "^7.1.6",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
