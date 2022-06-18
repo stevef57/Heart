@@ -3,7 +3,6 @@
     margin-top: 5rem;
     text-align: center;
     background-color: black;
-    height: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,17 +13,64 @@
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+// subscribe section
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.subTitle {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Bebas Neue';
+    margin-bottom: .5rem;
+}
+.subForm {
+    position: relative;
+    display: inline-flex;
+}
+.subEmail {
+    width: 23rem;
+    height: 2rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1rem;
+    padding: .3rem;
+}
+.subButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    height: 100%;
+    background-color: #B20000;
+    font-family: 'Bebas Neue';
+    color: white;
+    width: 5rem;
 }
 
 // media query
 
 @media (max-width: 428px) {
-    .footerBox {
-        height: 4rem;
-    }
     .footerTitle {
         font-size: .9rem;
-        padding: 1rem;
+    }
+    .subEmail {
+        width: 20rem;
+    }
+    .subButton {
+        width: 4rem;
     }
 }
 @media (max-width: 390px) {
