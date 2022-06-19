@@ -6,7 +6,8 @@ import { AiFillMail } from "react-icons/ai";
 import { AiFillFire } from "react-icons/ai";
 import styles from "../styles/Navbar.module.scss";
 import Social from "./Social";
-import NavLinks from "./NavLinks";
+import MobileNavLinks from "./MobileNavLinks";
+import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 const MobileNav = () => {
@@ -22,7 +23,7 @@ const MobileNav = () => {
     <div className={styles.mobileAll}>
       <div className={styles.mobileBox}>
         {open ? close : menu}
-        <Link href="/" className={styles.logoBox}>
+        <Link href="/">
           <div onClick={forceClosed} className={styles.logoBox}>
             <img
               className={styles.logo}
@@ -31,7 +32,9 @@ const MobileNav = () => {
             />
           </div>
         </Link>
-        {open && <NavLinks isMobile={true} forceClosed={forceClosed} />}
+        <AnimatePresence>
+          {open && <MobileNavLinks isMobile={true} forceClosed={forceClosed} />}
+        </AnimatePresence>
         <Social />
       </div>
       <div className={styles.bottomMenu}>
