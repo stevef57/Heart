@@ -3,14 +3,47 @@ import styles from "../styles/Videos.module.scss";
 import Image from "next/image";
 import ScrollContainer from "react-indiana-drag-scroll";
 import Head from "next/head";
-import { useState } from "react";
+import { FaChevronCircleLeft } from "react-icons/Fa";
+import { FaChevronCircleRight } from "react-icons/Fa";
+import { useState, useRef, useEffect } from "react";
 
 const scrollTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
 export default function Videos({ results }) {
   const [currentVideo, setCurrentVideo] = useState(results[3]);
   const [playing, setPlaying] = useState(false);
+  const ref = useRef(null);
+  const [scrollX, setscrollX] = useState(0);
+  const [scrolEnd, setscrolEnd] = useState(false);
+  const slide = (shift) => {
+    ref.current.container.current.scrollLeft += shift;
+    setscrollX(scrollX + shift);
+    if (
+      Math.floor(
+        ref.current.container.current.scrollWidth -
+          ref.current.container.current.scrollLeft
+      ) <= ref.current.container.current.offsetWidth
+    ) {
+      setscrolEnd(true);
+    } else {
+      setscrolEnd(false);
+    }
+  };
+  const scrollCheck = () => {
+    setscrollX(ref.current.container.current.scrollLeft);
+    if (
+      Math.floor(
+        ref.current.container.current.scrollWidth -
+          ref.current.container.current.scrollLeft
+      ) <= ref.current.container.current.offsetWidth
+    ) {
+      setscrolEnd(true);
+    } else {
+      setscrolEnd(false);
+    }
+  };
   return (
     <div className={styles.videos}>
       <Head>
@@ -33,6 +66,8 @@ export default function Videos({ results }) {
           />
         </div>
         <ScrollContainer
+          ref={ref}
+          onScroll={scrollCheck}
           nativeMobileScroll={true}
           hideScrollbars={false}
           vertical={false}
@@ -65,6 +100,18 @@ export default function Videos({ results }) {
               );
             })}
         </ScrollContainer>
+        {scrollX !== 0 && (
+          <FaChevronCircleLeft
+            onClick={() => slide(-450)}
+            className={styles.left}
+          />
+        )}
+        {!scrolEnd && (
+          <FaChevronCircleRight
+            onClick={() => slide(450)}
+            className={styles.right}
+          />
+        )}
       </div>
     </div>
   );
