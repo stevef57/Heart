@@ -3,8 +3,8 @@ import styles from "../styles/Videos.module.scss";
 import Image from "next/image";
 import ScrollContainer from "react-indiana-drag-scroll";
 import Head from "next/head";
-import { FaChevronCircleLeft } from "react-icons/Fa";
-import { FaChevronCircleRight } from "react-icons/Fa";
+import { FaChevronCircleLeft } from "react-icons/fa";
+import { FaChevronCircleRight } from "react-icons/fa";
 import { useState, useRef, useEffect } from "react";
 
 const scrollTop = () => {
