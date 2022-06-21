@@ -3,8 +3,8 @@ import styles from "../styles/Videos.module.scss";
 import Image from "next/image";
 import ScrollContainer from "react-indiana-drag-scroll";
 import Head from "next/head";
-import { FaChevronCircleLeft } from "react-icons/fa";
-import { FaChevronCircleRight } from "react-icons/fa";
+import { AiFillLeftCircle } from "react-icons/ai";
+import { AiFillRightCircle } from "react-icons/ai";
 import { useState, useRef, useEffect } from "react";
 
 const scrollTop = () => {
@@ -101,13 +101,13 @@ export default function Videos({ results }) {
             })}
         </ScrollContainer>
         {scrollX !== 0 && (
-          <FaChevronCircleLeft
+          <AiFillLeftCircle
             onClick={() => slide(-450)}
             className={styles.left}
           />
         )}
         {!scrolEnd && (
-          <FaChevronCircleRight
+          <AiFillRightCircle
             onClick={() => slide(450)}
             className={styles.right}
           />
